@@ -59,11 +59,9 @@ const NewToDoForm = (props) => {
                         ref={notesInput}
                     ></textarea>
                 </div>
-                <Button
-                    children={'Add'}
-                    type={'submit'}
-                    onClick={submitHandler}
-                />
+                <Button type={'submit'} onClick={submitHandler}>
+                    Add
+                </Button>
                 {!isValid && (
                     <div className="mt-1 rounded bg-red-100 py-1 text-sm font-bold dark:bg-[#5B7553] dark:text-white">
                         Invalid input. You need at least a summary.
