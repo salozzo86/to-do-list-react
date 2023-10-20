@@ -11,7 +11,7 @@ function App() {
         setToDos((prevState) => {
             return [inputData, ...prevState];
         });
-    });
+    }, []);
 
     return (
         <>
